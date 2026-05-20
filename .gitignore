@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and runtime output
+*.log
+logs/
+run/
+tmp/
+temp/
+
+# Model and dataset artifacts
+datasets/
+data/raw/
+data/processed/
+weights/
+models/*.pt
+models/*.onnx
+models/*.rknn
+models/*.bin
+models/*.param
+models/*.engine
+
+# Media generated during demos
+captures/
+recordings/
+demo_media/generated/
+
+# Large local assets
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+
+# Keep placeholder directories if needed
+!.gitkeep
