@@ -36,6 +36,19 @@ $env:PYTHONPATH="src"
 python -m rk1126b_assistant.main
 ```
 
+可以通过 `--scene` 选择 Windows 模拟桌面场景，不需要摄像头也能演示多模态逻辑：
+
+```powershell
+$env:PYTHONPATH="src"
+python -m rk1126b_assistant.main --scene study_desk
+```
+
+可用场景：
+
+- `empty`：空桌面，用于验证无检测结果时的反馈。
+- `study_desk`：包含 `phone`、`book`、`cup`，用于演示“桌上有什么”“帮我找手机”“我准备学习了”。
+- `relax_desk`：包含 `phone`、`cup`、`mouse`，用于演示生活娱乐场景。
+
 ## GitHub 远程仓库配置
 
 仓库创建后，将下面命令中的占位符替换为你的 GitHub 仓库地址：
