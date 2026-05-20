@@ -5,7 +5,7 @@
 ## HTTPS 方式
 
 ```powershell
-git remote add origin https://github.com/<your-username>/<your-repository>.git
+git remote add origin https://github.com/Zxyxuegao/rk1126b-assistant.git
 git branch -M main
 git push -u origin main
 ```
@@ -13,7 +13,7 @@ git push -u origin main
 ## SSH 方式
 
 ```powershell
-git remote add origin git@github.com:<your-username>/<your-repository>.git
+git remote add origin git@github.com:Zxyxuegao/rk1126b-assistant.git
 git branch -M main
 git push -u origin main
 ```
