@@ -25,6 +25,17 @@ $env:PYTHONPATH="src"
 python -m unittest discover -s tests -v
 ```
 
+## 当前代码范围
+
+第一阶段代码只实现可在 Windows 测试的核心逻辑：语音文本到意图、视觉检测结果查询、动作白名单规划和 CLI demo。摄像头、麦克风、RKNN、GUI 和播放器真实控制将在 RV1126B 环境确认后接入。
+
+## CLI Demo
+
+```powershell
+$env:PYTHONPATH="src"
+python -m rk1126b_assistant.main
+```
+
 ## GitHub 远程仓库配置
 
 仓库创建后，将下面命令中的占位符替换为你的 GitHub 仓库地址：

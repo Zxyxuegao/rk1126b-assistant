@@ -1,0 +1,14 @@
+[Unit]
+Description=RV1126B Multimodal Assistant
+After=network-online.target sound.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/rk1126b-assistant
+Environment=PYTHONPATH=/opt/rk1126b-assistant/src
+ExecStart=/usr/bin/python3 -m rk1126b_assistant.main
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
