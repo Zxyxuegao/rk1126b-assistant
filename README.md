@@ -7,6 +7,7 @@
 ## 项目文档
 
 - [项目方案](docs/project-proposal.md)
+- [RV1126B 板端迁移指南](docs/board-porting-guide.md)
 
 ## 第一版目标
 
@@ -48,6 +49,17 @@ python -m rk1126b_assistant.main --scene study_desk
 - `empty`：空桌面，用于验证无检测结果时的反馈。
 - `study_desk`：包含 `phone`、`book`、`cup`，用于演示“桌上有什么”“帮我找手机”“我准备学习了”。
 - `relax_desk`：包含 `phone`、`cup`、`mouse`，用于演示生活娱乐场景。
+
+## Windows GUI Demo
+
+可以启动 Tkinter 图形界面，左侧显示模拟检测框，右侧输入指令并查看响应日志：
+
+```powershell
+$env:PYTHONPATH="src"
+python -m rk1126b_assistant.gui_tk --scene study_desk
+```
+
+这个 GUI 仍然使用模拟视觉结果，不依赖摄像头、麦克风、RKNN 或 Linux 环境。
 
 ## GitHub 远程仓库配置
 
