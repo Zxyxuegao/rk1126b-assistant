@@ -1,0 +1,8 @@
+[project]
+name = "rk1126b-assistant"
+version = "0.1.0"
+description = "Windows-testable scaffold for an RV1126B edge multimodal assistant."
+requires-python = ">=3.10"
+
+[tool.unittest]
+start-directory = "tests"

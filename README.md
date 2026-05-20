@@ -16,6 +16,15 @@
 - 支持打开学习网页、播放本地音乐、播放本地视频、暂停播放等系统控制动作。
 - 支持“桌上有什么”“帮我找手机”等语音触发的视觉查询。
 
+## Windows 开发测试
+
+当前第一阶段只依赖 Python 标准库，可在 Windows 上直接运行核心逻辑测试：
+
+```powershell
+$env:PYTHONPATH="src"
+python -m unittest discover -s tests -v
+```
+
 ## GitHub 远程仓库配置
 
 仓库创建后，将下面命令中的占位符替换为你的 GitHub 仓库地址：
